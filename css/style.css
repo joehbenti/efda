@@ -10,7 +10,8 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Quicksand',
+  sans-serif;
 }
 
 a {
@@ -29,9 +30,9 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  /* margin: 0 0 20px 0; */
   padding: 0;
 }
 
@@ -90,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: #37B284;
 }
 
 #header #logo {
@@ -101,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -128,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-fixed {
   background: rgba(52, 59, 64, 0.9);
   padding: 20px 0;
-  height: 72px;
+  height: 80px;
   transition: all 0.5s;
 }
 
@@ -203,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -230,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 29px;
 }
 
 .nav-menu ul {
@@ -260,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li {
-  min-width: 180px;
+  min-width: 200px;
 }
 
 /* Nav Menu Arrows */
@@ -285,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -299,8 +303,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 13px;
   outline: none;
@@ -314,10 +318,10 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #FFEF0D;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -583,7 +587,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 14px;
 }
 
@@ -681,7 +685,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -958,13 +962,227 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-#footer .copyright {
+#footer h3 {
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Custome Added */
+
+/* .carousel-item {
+  height: 80vh;
+} */
+
+.slide-img-container {
+  position: relative;
+}
+
+.slide-img-description {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  color: white;
+}
+.slide-img-description h1 {
+  font-weight: 900;
+  font-size: 5em;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.stats {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.stat-figure > h1 {
+  font-size:3.5rem;
+  font-weight: 900;
+  color: #2dc997;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+}
+
+.stat-description {
+  font-size: 1.5em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.programs, .news-sections, .donors {
+  margin-bottom: 20px;
+  margin-top: 40px; 
+}
+
+.programs h1 , .news-sections h1, .donors h1 {
+  font-weight: 900;
+}
+
+.programs .col-lg-3 {
+  min-height: 500px;
+}
+
+.programs .prog-1 {
+  background: url('../img/programs/education.png');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.programs .prog-2 {
+  background: url('../img/programs/Livelihood.png');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.programs .prog-3 {
+  background: url('../img/programs/Crosscutting.png');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.programs .prog-4 {
+  background: url('../img/programs/women.png');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.prog-1, .prog-2, .prog-3, .prog-4 {
+  transition: all .3s ease-in-out;
+}
+
+.prog-1:hover,
+.prog-2:hover,
+.prog-3:hover,
+.prog-4:hover {
+  transform: scale(1.03);
+  -webkit-box-shadow: 0px 15px 32px -8px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 15px 32px -8px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 15px 32px -8px rgba(0, 0, 0, 0.32);
+}
+
+.prog-title {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.news-holder {
+  background: url('../img/news-slides/roger-federer-visit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  min-height: 300px;
+}
+
+.news-holder>div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  top: 0;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #2dc997;
+  border-bottom: 50%;
+}
+
+.how-to-help {
+  background-color: #37B284;
+  color: white;
+  padding: 20px;
+}
+
+.how-to-help h3, h5 {
+  display: inline-block;
+}
+.how-to-help a {
+  /* color: white; */
+  border: 1px solid white;
+}
+
+.subscribe {
+  background-color: #3CC894;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.subscribe h5 {
+  color: white;
+}
+
+/* Impact page stylesheet */
+.impact-title {
+  background-color: #2dc997;
+  min-height: 400px;
+  position: relative
+}
+
+.center-it {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.center-it h1, .bottom-nav a{
+  color: white;
+  padding: 20px;
+}
+
+.impact-title h1 {
+  color: white;
+}
+
+.impact-img .img-holder {
+  background-image: url('../img/Slides/carousel_img_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  color: white;
+  padding: 20px;
+}
+
+.impact-stat .col {
+  background-color: #29A8A8;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #ccc;
+.impact-stat h1 {
+  font-size: 4em;
+  padding: 20px;
+}
+
+.stat-fig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects {
+  padding: 20px;
+}
+
+.projects .row {
+  margin-top: 20%;
+} 
+
+.site-name {
+  padding: 10px;
+  font-weight: 900;
+}
+
+.our-vison {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#main {
+  min-height: 90vh;
 }
